@@ -4,28 +4,35 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import uk.co.barclays.basepage.BasePage;
 import uk.co.barclays.browserselector.BrowserSelector;
+import uk.co.barclays.loadproperty.LoadProperty;
 
 import java.util.concurrent.TimeUnit;
 
 public class TestBase extends BasePage {
 
+    //object creation
     BrowserSelector browserSelector = new BrowserSelector();
-    String baseUrl = "https://www.barclays.co.uk/";
+    LoadProperty loadProperty = new LoadProperty();
+
+    //getting "baseUrl" & "browser" values from config.properties
+    String baseUrl = loadProperty.getProperty("baseUrl");
+    String browser = loadProperty.getProperty("browser");
 
 
-    @BeforeMethod
+
+    //open browser
+    @BeforeMethod (groups = {"Sanity","Smoke","Regression"})
     public void openBrowser() {
-        browserSelector.selectBrowser("chrome");
+        browserSelector.selectBrowser(browser);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-//        driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(baseUrl);
     }
 
-    @AfterMethod
-    public void tearDown() {
+    //close browser
+    @AfterMethod (groups = {"Sanity","Smoke","Regression"})
+    public void closeBrowser() {
         driver.quit();
-
     }
 }
 
