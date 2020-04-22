@@ -1,0 +1,12 @@
+2020-04-20 23:04:678 INFO  BrowserSelector :19 - Launching Chrome Browser
+2020-04-20 23:04:611 INFO  HomePage :26 - Click on Bank link [[ChromeDriver: chrome on WINDOWS (6a57e2283d7c195be05ad2da8431514a)] -> link text: Bank]
+2020-04-20 23:04:207 INFO  BrowserSelector :19 - Launching Chrome Browser
+2020-04-20 23:04:326 INFO  HomePage :32 - Click on borrow link [[ChromeDriver: chrome on WINDOWS (f685e75aa823f6c41c5f4adc6335a746)] -> link text: Borrow]
+2020-04-20 23:04:916 INFO  BrowserSelector :19 - Launching Chrome Browser
+2020-04-20 23:04:737 INFO  HomePage :38 - Click on login link Proxy element for: DefaultElementLocator 'By.linkText: Log In'
+2020-04-20 23:04:594 INFO  BrowserSelector :19 - Launching Chrome Browser
+2020-04-20 23:04:468 INFO  HomePage :26 - Click on Bank link [[ChromeDriver: chrome on WINDOWS (a0b2fed5a5d5c65dd839503d6f43ab0b)] -> link text: Bank]
+2020-04-20 23:04:618 INFO  BrowserSelector :19 - Launching Chrome Browser
+2020-04-20 23:04:642 INFO  HomePage :32 - Click on borrow link [[ChromeDriver: chrome on WINDOWS (baee879a6b0c64c0f10c80cc19c8e408)] -> link text: Borrow]
+2020-04-20 23:04:844 INFO  BrowserSelector :19 - Launching Chrome Browser
+2020-04-20 23:04:265 INFO  HomePage :38 - Click on login link Proxy element for: DefaultElementLocator 'By.linkText: Log In'
